@@ -1,0 +1,179 @@
+g<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profil Saya</title>
+    <!-- meta name -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+    <!-- buat menu mobile/responsive -->
+    <button id="menu-btn" onclick="showMenu()" style="font-family: serif; color: grey;">MENU</button>
+    <ul id="navi">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">INVENTORY</a></li>
+    </ul>
+    </nav>
+<div class="container">
+    <div class="flex-container">
+        <div class>
+            <img src="./download.jpeg">
+        </div>
+        <div class="info">
+            <h1 style="text-align: center;" id="pName">Nama Anda</h1>
+            <p style="text-align: center;" id="pRole">Front End Designer</p>
+            <div>
+                <a><button id="kontak" onclick="showForm()">Edit</button></a>
+                <a><button id="resume">Resume</button></a>
+            </div>
+        </div>
+        <div class="more-info">
+            <div><b>Availability</b></div>
+            <div id="pAva"> Fulltime</div>
+            <div><b>Usia</b></div> 
+            <div id="pAge">19</div>
+            <div><b>Lokasi</b></div> 
+            <div id="pLoc">Jakarta</div>
+            <div><b>Pengalaman</b></div>
+            <div id="pExp">2</div>
+            <div><b>Email</b></div>
+            <div id="pMail">email@email.com</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="formulir">
+        <form method="#" action="#">
+            <div class="form-pad">
+                <label>Nama</label> <br>
+                <input id="inName" class="form-pad" placeholder="masukkan nama anda">
+            </div>
+            <div class="form-pad">
+                <label>Role</label><br>
+                <input id="inRole" class="form-pad" type="text">
+            </div>
+            <div class="form-pad">
+                <label>Availability</label><br>
+                <input id="inAva" class="form-pad" type="text">
+            </div>
+            <div class="form-pad">
+                <label>Usia</label><br>
+                <input id="inAge" class="form-pad" type="number" min="17" max="30">
+            </div>
+            <div class="form-pad">
+                <label>Lokasi</label><br>
+                <input id="inLoc" class="form-pad" type="text">
+            </div>
+            <div class="form-pad">
+                <label>Years Experience</label><br>
+                <input id="inExp" class="form-pad" type="text">
+            </div>
+            <div class="form-pad">
+                <label>Email</label><br>
+                <input id="inMail" class="form-pad" type="email" required>
+            </div>
+            <div class="form-pad">
+                <input class="submit-button" type="submit" onclick="simpanForm()">
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+
+<script>
+    
+
+    function showMenu () {   
+        
+        let nav=document.getElementById("navi");
+        
+        if (nav.style.display==="none") {
+            nav.style.display="block";
+        }
+        else {
+            nav.style.display="none";
+        }
+
+    }
+
+    // let nav = document.getElementById("nav-info")
+    // let menu = document.getElementById("menu-btn")
+
+    // document.getElementById("menu-btn").onclick = function () {
+    //     if (nav.style.display="none") {
+    //         nav.style=display="block";
+    //     }
+    //     else {
+    //         nav.style.display="none";
+    //     }
+    // }
+
+    let formMenu=document.getElementById("formulir");
+    formMenu.style.display="none";
+    
+    function showForm () {
+        if (formMenu.style.display==="none") {
+            formMenu.style.display="block";
+        }
+        else {
+            formMenu.style.display="none";
+        }
+
+        let nama=document.getElementById("pName").innerHTML;
+        document.getElementById("inName").value=nama;
+
+        let role=document.getElementById("pRole").innerHTML;
+        document.getElementById("inRole").value=role;
+
+        let ava=document.getElementById("pAva").innerHTML;
+        document.getElementById("inAva").value=ava;
+
+        let age=document.getElementById("pAge").innerHTML;
+        document.getElementById("inAge").value=age;
+
+        let loc=document.getElementById("pLoc").innerHTML;
+        document.getElementById("inLoc").value=loc;
+
+        let exp=document.getElementById("pExp").innerHTML;
+        document.getElementById("inExp").value=exp;
+
+        let mail=document.getElementById("pMail").innerHTML;
+        document.getElementById("inMail").value=mail;
+
+    }
+
+    function simpanForm () {
+        formMenu.style.display="none";
+        
+        let nama=document.getElementById("inName").value;
+        document.getElementById("pName").innerHTML=nama;
+        
+        let role=document.getElementById("inRole").value;
+        document.getElementById("pRole").innerHTML=role;
+
+        let ava=document.getElementById("inAva").value;
+        document.getElementById("pAva").innerHTML=ava;
+
+        let age=document.getElementById("inAge").value;
+        document.getElementById("pAge").innerHTML=age;
+
+        let loc=document.getElementById("inLoc").value;
+        document.getElementById("pLoc").innerHTML=loc;
+
+        let exp=document.getElementById("inExp").value;
+        document.getElementById("pExp").innerHTML=exp;
+
+        let mail=document.getElementById("inMail").value;
+        document.getElementById("pMail").innerHTML=mail;
+    }
+
+</script>
+
+</html>
