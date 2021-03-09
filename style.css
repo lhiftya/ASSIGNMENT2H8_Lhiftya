@@ -189,7 +189,15 @@ img {
 
 .info {
     margin-right: 50px;
-   
+    margin-right: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info h1 {
+    margin-bottom: -10px;
 }
 
 .more-info {
