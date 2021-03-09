@@ -4,7 +4,7 @@ BUG #2: Butuh dua kali klik menu pada inspect element responsive sebelum menu na
 
 BUG #3: Butuh satu klik tombol SUBMIT sebelum input bisa masuk ke dalam HTML (tombol SUBMIT harus diklik dua kali).
 
-Agar fungsi submitForm () berjalan:
+Agar fungsi simpanForm () berjalan:
 
 klik EDIT > klik SUBMIT > klik EDIT sekali lagi > isi FORM > klik SUBMIT
 
