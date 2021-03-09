@@ -1,10 +1,10 @@
-Saya menambahkan tombol 'Menu' di samping kiri nav pada tampilan web karena tombol javascript menghilangkan nav setelah keluar dari inspect element responsive.
+BUG # 1 : Menampilkan tombol 'Menu' di samping kiri nav pada tampilan web karena tombol javascript menghilangkan nav setelah keluar dari inspect element responsive.
 
-Isu #1: Butuh dua kali klik menu pada inspect element responsive sebelum menu nav dropdown muncul.
+BUG #2: Butuh dua kali klik menu pada inspect element responsive sebelum menu nav dropdown muncul.
 
-Isu #2: Butuh satu klik form submit sebelum input bisa masuk ke dalam html (input submit harus diklik dua kali).
+BUG #3: Butuh satu klik tombol SUBMIT sebelum input bisa masuk ke dalam HTML (tombol SUBMIT harus diklik dua kali).
 
-Agar submit berjalan:
+Agar fungsi submitForm () berjalan:
 
 klik EDIT > klik SUBMIT > klik EDIT sekali lagi > isi FORM > klik SUBMIT
 
